@@ -5,6 +5,7 @@ import Order from 'components/order/order'
 import Home from 'components/home/home'
 import './cube-ui'
 import './register'
+import store from 'store'
 
 import 'common/stylus/index.styl'
 
@@ -22,6 +23,7 @@ const router = new VueRouter({
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   render: h => h(App),
   router
 })
